@@ -1,0 +1,12 @@
+html {
+  margin: auto;
+  padding: auto;
+  background-color: hsl(60, 39%, 85%);
+  overflow: auto;
+}
+body {
+  margin: auto;
+  padding: auto;
+  background-color: hsl(60, 39%, 85%);
+  overflow: auto;
+}

@@ -1,0 +1,26 @@
+.navFix {
+  position: fixed;
+  top: 0;
+  background: transparent;
+  width: 100%;
+  height: 60px;
+  background-color: #827a63 !important;
+  height: auto;
+}
+li {
+  margin-right: 15px;
+}
+.navbar-hamburger {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  padding-left: 10px;
+}
+.navbar-hamburger:hover {
+  text-decoration: none;
+  color: black;
+}
+.a-link {
+  color: white;
+  font-size: 20px;
+}

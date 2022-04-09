@@ -1,0 +1,56 @@
+@color_1: black;
+@color_2: hsl(0, 9%, 48%);
+@color_3: beige;
+@background_color: #827a63;
+
+.responsive(@flex,@width){
+	flex: @flex;
+	max-width: @width;
+  }
+
+
+.recipe {
+	color: @color_2;
+	margin-top: 10px;
+	h3 {
+		display: block;
+		text-align: center;
+		font-style: italic;
+		font-weight: 800;
+		background-color: @background_color;
+		color: @color_3;
+		padding: 10px 0px;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			h3 {
+				color: @color_1;
+			}
+		}
+	}
+	img {
+		display: inline;
+		height: 300px;
+		width: 400px;
+		padding-left: 80px;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	footer{
+		p{
+			.responsive(50%, 50%);
+		}
+	}
+  }
+  
+  @media screen and (max-width: 600px) {
+	footer {
+		p{
+			.responsive(100%,100%);
+		}
+	  
+	}
+  }

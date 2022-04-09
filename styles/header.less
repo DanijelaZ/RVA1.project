@@ -1,0 +1,22 @@
+@image: url("images/photo1.jpg");
+@background_color_3: hsl(45, 14%, 55%);
+
+.jumbotron-header {
+	background: @image no-repeat center;
+	background-size: cover;
+	position: relative;
+	height: calc(100vh);
+	border-radius: 0;
+	margin-bottom: 0;
+	background-attachment: fixed;
+}
+
+.hero-text {
+	display: inline-block;
+	margin: 400px 0px 20px 0px;
+	padding: 20px 35px;
+	font-size: 33px;
+	font-style: italic;
+	background-color: @background_color_3;
+	opacity: 0.8;
+}

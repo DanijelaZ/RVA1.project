@@ -1,0 +1,37 @@
+.recipe {
+  color: hsl(0, 9%, 48%);
+  margin-top: 10px;
+}
+.recipe h3 {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-weight: 800;
+  background-color: #827a63;
+  color: beige;
+  padding: 10px 0px;
+}
+.recipe a {
+  text-decoration: none;
+}
+.recipe a:hover h3 {
+  color: black;
+}
+.recipe img {
+  display: inline;
+  height: 300px;
+  width: 400px;
+  padding-left: 80px;
+}
+@media screen and (max-width: 800px) {
+  footer p {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer p {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
