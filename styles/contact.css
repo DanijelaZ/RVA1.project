@@ -181,3 +181,8 @@ form p {
   background-color: hsl(0, 9%, 48%);
   color: white;
 }
+@media screen and (max-width: 300px) {
+  form {
+    padding: 30px 15px;
+  }
+}

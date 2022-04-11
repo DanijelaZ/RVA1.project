@@ -2,10 +2,35 @@
   font-weight: 700;
   font-size: 18px;
   display: inline-block;
-  padding: 40px 70px;
-  margin: 30px 50px;
-  width: 70%;
+  padding: 40px 60px;
+  margin-left: 10px;
+  width: 90%;
   border: 3px dashed black;
   background-color: hsl(45, 14%, 55%);
   text-align: justify;
+}
+.food .small {
+  visibility: hidden;
+}
+.food .large {
+  visibility: visible;
+}
+@media screen and (max-width: 350px) {
+  .food {
+    height: 100px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .food .small {
+    visibility: visible;
+    padding: 30px;
+    text-align: center;
+  }
+  .food .large {
+    visibility: hidden;
+    display: none;
+  }
 }

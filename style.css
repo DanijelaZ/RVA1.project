@@ -45,7 +45,7 @@ li {
   margin-bottom: 0;
   background-attachment: fixed;
 }
-.hero-text {
+.hero-text p {
   display: inline-block;
   margin: 400px 0px 20px 0px;
   padding: 20px 35px;
@@ -54,8 +54,24 @@ li {
   background-color: hsl(45, 14%, 55%);
   opacity: 0.8;
 }
+@media screen and (max-width: 300px) {
+  .hero-text p {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-text p {
+    margin: 200px 0px 20px 0px;
+    padding: 20px 25px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
 .description {
-  background-color: beige;
+  background-color: hsl(45, 14%, 55%);
   padding: 15px;
   margin-top: 0px;
   text-align: center;
@@ -67,12 +83,37 @@ li {
   font-weight: 700;
   font-size: 18px;
   display: inline-block;
-  padding: 40px 70px;
-  margin: 30px 50px;
-  width: 70%;
+  padding: 40px 60px;
+  margin-left: 10px;
+  width: 90%;
   border: 3px dashed black;
   background-color: hsl(45, 14%, 55%);
   text-align: justify;
+}
+.food .small {
+  visibility: hidden;
+}
+.food .large {
+  visibility: visible;
+}
+@media screen and (max-width: 350px) {
+  .food {
+    height: 100px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 0px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .food .small {
+    visibility: visible;
+    padding: 30px;
+    text-align: center;
+  }
+  .food .large {
+    visibility: hidden;
+    display: none;
+  }
 }
 .recipe {
   color: hsl(0, 9%, 48%);
@@ -100,15 +141,16 @@ li {
   padding-left: 80px;
 }
 @media screen and (max-width: 800px) {
-  footer p {
-    flex: 50%;
-    max-width: 50%;
+  .row img {
+    height: 70%;
+    max-width: 70%;
   }
 }
 @media screen and (max-width: 600px) {
-  footer p {
-    flex: 100%;
-    max-width: 100%;
+  .row img {
+    height: 80%;
+    max-width: 80%;
+    padding: 5%;
   }
 }
 form {
@@ -293,6 +335,11 @@ form p {
 .btn:hover {
   background-color: hsl(0, 9%, 48%);
   color: white;
+}
+@media screen and (max-width: 300px) {
+  form {
+    padding: 30px 15px;
+  }
 }
 footer p {
   font-size: 15px;

@@ -24,14 +24,15 @@
   padding-left: 80px;
 }
 @media screen and (max-width: 800px) {
-  footer p {
-    flex: 50%;
-    max-width: 50%;
+  .row img {
+    height: 70%;
+    max-width: 70%;
   }
 }
 @media screen and (max-width: 600px) {
-  footer p {
-    flex: 100%;
-    max-width: 100%;
+  .row img {
+    height: 80%;
+    max-width: 80%;
+    padding: 5%;
   }
 }

@@ -1,16 +1,52 @@
 @background_color: hsl(45, 14%, 55%);
 
+#food(){
+    font-weight: 700;
+    font-size: 18px;
+}
 
 .food {
-	font-weight: 700;
-	font-size: 18px;
+	#food;	
 	display: inline-block;
-	padding: 40px 70px;
-	margin: 30px 50px;
-	// dodato
-	width:70%;
-	////
+	padding: 40px 60px;
+	margin-left: 10px;
+	width:90%;
 	border: 3px dashed black;
 	background-color: @background_color;
 	text-align: justify;
+
+    .small{
+        visibility: hidden;
+    }
+    .large{
+        visibility: visible;
+    }
 }
+
+
+.visibility(@size) when (@size = lg){
+    visibility: hidden;
+    display: none;
+}
+
+.visibility(@size) when (@size = sm){
+    visibility: visible;
+}
+
+  @media screen and (max-width: 350px){
+      .food{
+        height: 100px;
+        width:70%;
+        margin-left: 15%;
+        padding: 0px;
+        #food;
+        .small{
+            .visibility(sm);
+            padding: 30px;
+            text-align: center;
+        }
+        .large{
+            .visibility(lg);
+        }
+      }
+  }
